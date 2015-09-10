@@ -86,13 +86,13 @@ resources:
   server_floating_ip:
     type: OS::Neutron::FloatingIP
     properties:
-      floating_network_id: "net04_ext"
+      floating_network: "net04_ext"
       port_id: { get_resource: server_port }
 
   server_floating_ip2:
     type: OS::Neutron::FloatingIP
     properties:
-      floating_network_id: "net04_ext"
+      floating_network: "net04_ext"
       port_id: { get_resource: server_port2 }
 
   server_security_group:
