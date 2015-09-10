@@ -49,7 +49,7 @@ resources:
     properties:
       name: "Windows Server"
       image: "Windows Server"
-      flavor: "m1.medium"
+      flavor: "m1.large"
       key_name: "ParDeChaves1"
       networks:
         - port: { get_resource: server_port }
